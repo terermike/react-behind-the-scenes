@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main>
         <ConfugureCounter onSelect={setChosenCount} />
-        <Counter initialCount={newCount} />
+        <Counter key={newCount} initialCount={newCount} />
         <Counter initialCount={0} />
       </main>
     </>
